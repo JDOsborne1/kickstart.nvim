@@ -567,6 +567,7 @@ require('lazy').setup({
       local servers = {
 
         -- Experimental section
+        sqls = {},
 
         -- Core Language support
         gopls = {},
