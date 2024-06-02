@@ -568,6 +568,10 @@ require('lazy').setup({
 
         -- Experimental section
         sqls = {},
+        jqls = {},
+        jsonls = {},
+        gleam = {},
+        htmx = {},
 
         -- Core Language support
         gopls = {},
