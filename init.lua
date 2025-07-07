@@ -680,7 +680,6 @@ require('lazy').setup({
         sqls = {},
         jqls = {},
         jsonls = {},
-        gleam = {},
         htmx = {},
 
         -- Core Language support
