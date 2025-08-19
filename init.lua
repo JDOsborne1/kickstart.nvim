@@ -917,6 +917,9 @@ require('lazy').setup({
   -- Use excellent Nvim-R plugin for R support
   { 'jalvesaq/Nvim-R' },
 
+  -- Trial SQL Support
+  { 'nanotee/sqls.nvim' },
+
   {
     'kdheepak/lazygit.nvim',
     cmd = {
