@@ -683,7 +683,13 @@ require('lazy').setup({
 
         -- Core Language support
         gopls = {},
-        r_language_server = {},
+        r_language_server = {
+          capabilities = {
+            documentFormattingProvider = false,
+            documentRangeFormattingProvider = false,
+          },
+        },
+        air = {},
 
         -- Supplemental tools
         html = {},
@@ -776,6 +782,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        r = { 'air' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
@@ -907,7 +914,7 @@ require('lazy').setup({
   },
 
   -- Use excellent Nvim-R plugin for R support
-  { "jalvesaq/Nvim-R" },
+  { 'jalvesaq/Nvim-R' },
 
   {
     'kdheepak/lazygit.nvim',
